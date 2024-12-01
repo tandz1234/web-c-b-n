@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="chitietsanpham.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <section class="lego-models1">
+        <div class="lego-gallery">
+            <div class="lego-item">
+                <div class="product-images">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08.webp" alt="Product Image 1">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3oqtz2itk14@resize_w450_nl.webp" alt="Product Image 2">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3opczavuwff.webp" alt="Product Image 3">
+                </div>            
+                <div class="text-container">
+                  <h1 class="product-details">
+                    Tôn Ngộ Không Tương Thích Lego Khối Xây Dựng Vua Khỉ Vinh Quang Da Lắp Ráp Mecha Mô Hình Tay
+                  </h1>
+                  <p class="product-price">Giá: 585.220 VND</p>
+                  <p class="return-policy">Chính sách trả hàng: trong vòng 15 ngày kể từ ngày nhận.</p>
+                  <p class="shipping-policy">Vận chuyển: Miễn phí vận chuyển</p>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="0" min="0" readonly>
+                    <button class="quantity-btn" id="increase">+</button>
+                  </div>
+                  <div class="buy-now-container">
+                    <button class="buy-now-btn">Mua hàng</button>
+                    <button class="add-to-cart-btn" 
+                            data-name="Mô hình lego Tôn Ngộ Không" 
+                            data-price="585.220" 
+                            data-image="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08.webp" 
+            onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                  </div>              
+                </div>
+              </div>
+              <div class="product-description">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>Chào mừng đến với cửa hàng của chúng tôi 📣📣📣</p>
+                <p>🌸 Theo dõi cửa hàng để nhận phiếu giảm giá 🌸</p>
+                <p>-------------------------------------------------- ----------------------------------</p>
+                <p><strong>【Mô tả Sản phẩm】</strong></p>
+                <ul>
+                <p></p>
+                  <li>🌴 Chất lượng sản phẩm được đảm bảo và sẽ được kiểm tra trước khi giao hàng.</li>
+                  <li>🌴 Chúng tôi có kinh nghiệm phong phú và sản phẩm chất lượng cao. Tập trung vào chất lượng và giá rẻ! Mang lại cho bạn trải nghiệm mua sắm tốt nhất!</li>
+                  <li>🌴 Liên hệ với cửa hàng nếu bạn có bất kỳ câu hỏi nào.</li>
+                  <li>💗Sản phẩm có xuất xứ từ nước ngoài. Thời gian giao hàng khoảng 6-10 ngày.</li>
+                  <li>💗 Nếu bạn thích sản phẩm của chúng tôi. Vui lòng thêm vào giỏ hàng, cảm ơn bạn rất nhiều.</li>
+                  <li>💗Theo dõi những tin tức mới nhất của cửa hàng chúng tôi bất cứ lúc nào. Chúng tôi sẽ gửi cho bạn phiếu giảm giá và giảm giá sản phẩm.</li>
+                  <li>Kiểm tra chi tiết sản phẩm, màu sắc, kích thước trước khi đặt hàng, shop không chấp nhận đổi nhầm đơn hàng.</li>
+                  <li>****Quý khách vui lòng kiểm tra kỹ màu sắc, số lượng đặt và tên, địa chỉ chính xác để được giao hàng thuận tiện và nhanh chóng ****</li>
+                  <li>*** Nếu sản phẩm có vấn đề như lỗi, sai màu, sai mẫu vui lòng thông báo cho shop trước khi ấn sao. Hay đánh giá sản phẩm trong mọi trường hợp shop chúng tôi chịu trách nhiệm ****</li>
+                  <li>#Cảm ơn khách hàng đã ủng hộ shop nhớ ấn sao và theo dõi shop nhé. Cảm ơn bạn rất nhiều 🙏</li>
+                </ul>
+                <p>Mô Hình Lắp Ráp được chế tạo hoàn toàn từ chất liệu nhựa nguyên sinh ABS cao cấp, độ bền và chống biến dạng khi va đập tốt. Chất liệu này không chứa BPA, tuyệt đối an toàn với sức khỏe của bé.</p>
+                <p><strong>"🌟Lưu ý🌟 :</strong> 📣Có rất nhiều sản phẩm thời trang và thoải mái tại cửa hàng này. Đừng quên chú ý đến cửa hàng của chúng tôi. Chúc bạn mua sắm vui vẻ!.</p>
+                <p> 📣Do điều kiện ánh sáng và chế độ cài đặt màn hình khác nhau nên màu sắc thực tế của sản phẩm có thể hơi khác so với hình ảnh, xin cảm ơn.</p>
+                <p> 📣Quý khách vui lòng xác nhận thông tin là chính xác, trước khi đặt hàng vui lòng chọn đúng size, màu sản phẩm, điền rõ ràng tên, địa chỉ, số điện thoại người nhận.</p>
+              </div>
+             
+      </section>
+      <div class="product-suggestions">
+        <h3>Gợi Ý Sản Phẩm</h3>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbld-llz4ypqg8qxmd0.webp" alt="Sản phẩm 1">
+            <p>Mô hình lego Doraemon thần tài, mèo thần tài</p>
+            <p class="product-price">500,000 VNĐ</p>
+            <a href="chitietsanpham.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134301-7rdy6-lz0b7y8f50f621@resize_w450_nl.webp" alt="Sản phẩm 2">
+            <p>Mô hình Transformers(Robot biến hình)Optimus Prime, Bumblebee</p>
+            <p class="product-price">167.000 VND</p>
+            <a href="chitietsanpham5.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223rz4nibxa79.webp" alt="Sản phẩm 3">
+            <p> Mô hình Dragon Ball Majin Vegeta</p>
+            <p class="product-price">67.000 VND</p>
+            <a href="chitietsanpham10.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwi4s6wauord0a.webp" alt="Sản phẩm 4">
+            <p>GMô Hình Lắp Ráp 1/100 Mecha CHARON</p>
+            <p class="product-price">725.000 VND</p>
+            <a href="chitietsanpham15.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ll7938u566dkd9@resize_w450_nl.webp" alt="Sản phẩm 5">
+            <p>Mô hình Siêu tân tinh ba Thuyền Trưởng LAW KID LUFFY</p>
+            <p class="product-price">329.000 VND</p>
+            <a href="chitietsanpham20.html" class="view-details">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bán sỉ</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách bán hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>MOHINHSHOP</h3>
+          <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+          <p>Email: mohinhshop@gmail.com</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+            <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+        <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+      </div>
+      </footer>
+      <div id="order-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h2>Thông tin đặt hàng</h2>
+          <form id="order-form">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+  
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+  
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" placeholder="Nhập địa chỉ của bạn" required></textarea>
+  
+            <div class="modal-buttons">
+              <button type="submit" class="submit-btn">Xác nhận</button>
+              <button type="button" class="close-btn">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script-chitietsanpham.js"></script>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="chitietsanpham.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <section class="lego-models1">
+        <div class="lego-gallery">
+            <div class="lego-item">
+                <div class="product-images">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkwompnmisp72b@resize_w450_nl.webp" alt="Product Image 1">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-li1l32mhmykl4d@resize_w450_nl.webp" alt="Product Image 2">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-li1l32m7nd8h70@resize_w450_nl.webp" alt="Product Image 3">
+                </div>            
+                <div class="text-container">
+                  <h1 class="product-details">
+                    Mô Hình Son Goku Bản Cao Cấp Bản Năng Vô Cực Ultra Instinct
+                  </h1> 
+                  <p class="product-price">Giá: 899.000 VND </p>
+                  <p class="return-policy">Chính sách trả hàng: trong vòng 15 ngày kể từ ngày nhận.</p>
+                  <p class="shipping-policy">Vận chuyển: Miễn phí vận chuyển</p>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="0" min="0" readonly>
+                    <button class="quantity-btn" id="increase">+</button>
+                  </div>
+                  <div class="buy-now-container">
+                    <button class="buy-now-btn">Mua hàng</button>
+                    <button class="add-to-cart-btn" 
+                            data-name="Mô Hình Son Goku Bản Cao Cấp Bản Năng Vô Cực Ultra Instinct" 
+                            data-price="899.000" 
+                            data-image="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkwompnmisp72b@resize_w450_nl.webp" 
+            onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                  </div>              
+                </div>
+              </div>
+              <div class="product-description">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>MH66 - Mô Hình Son Goku Bản Cao Cấp Bản Năng Vô Cực Ultra Instinct Cao 55cm Có 3 Đầu Thay Thế</p>
+                <p>🎯Sản phẩm bằng nhựa PVC cao cấp an toàn với sức khỏe con người</p>
+                <p>🎯Được sơn tĩnh điện không bong.</p>
+                <p>🎯Có đế vững chãi, fullbox, có led, có 3 đầu thay thế</p>
+                <p>🎯Kích thước: 55cm (34x29x50CM)</p>
+                <p>🎯Trọng lượng ~4200g</p>
+                <p>💎 Sản phẩm có độ bền vững chắc, chống va đập</p>
+                <p>🔥 Thích hợp cho các bạn đam mê sưu tầm, trưng bày trên bàn làm việc, mua cho con em chơi, tặng làm quà sinh nhật</p>
+      </section>
+      <div class="product-suggestions">
+        <h3>Gợi Ý Sản Phẩm</h3>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rdwc-lz5yicrnb8dk5a.webp" alt="Sản phẩm 1">
+            <p>Khối Xây Dựng 3D - Lắp Ráp Mô Hình Nhà, LEGO Lâu Đài</p>
+            <p class="product-price">178.000 VND</p>
+            <a href="chitietsanpham4.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw8rqwjsja3f9c@resize_w450_nl.webp" alt="Sản phẩm 2">
+            <p> Mô hình Robot biến hình Transformer Shockwave TW-1028</p>
+            <p class="product-price">435.000 VND</p>
+            <a href="chitietsanpham9.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lom24x0zgrsn5b.webp" alt="Sản phẩm 3">
+            <p>Goku SSJ3 - Dragon Ball - Huben Studio</p>
+            <p class="product-price">15.000.000 VND</p>
+            <a href="chitietsanpham14.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd3m-lx9jvx1ekq9566.webp" alt="Sản phẩm 4">
+            <p>Mô Hình Gundam Lắp Ráp Astray Sengoku</p>
+            <p class="product-price">84.999 VND</p>
+            <a href="chitietsanpham19.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2ny1iygnkzq0b@resize_w450_nl.webp" alt="Sản phẩm 5">
+            <p>Mô Hình One Piece Gear 5 nika Luffy Nika luffy vs kaido</p>
+            <p class="product-price">67.000 VND</p>
+            <a href="chitietsanpham24" class="view-details">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bán sỉ</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách bán hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>MOHINHSHOP</h3>
+          <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+          <p>Email: mohinhshop@gmail.com</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+            <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+        <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+      </div>
+      </footer>
+      <div id="order-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h2>Thông tin đặt hàng</h2>
+          <form id="order-form">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+  
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+  
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" placeholder="Nhập địa chỉ của bạn" required></textarea>
+  
+            <div class="modal-buttons">
+              <button type="submit" class="submit-btn">Xác nhận</button>
+              <button type="button" class="close-btn">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script-chitietsanpham.js"></script>
+</html>

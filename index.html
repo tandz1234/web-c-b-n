@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+      <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+    </div>
+    <div class="search-container">
+      <form id="searchForm" onsubmit="return handleSearch(event)">
+        <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+      </form>
+    </div>
+    <div class="auth-container">
+      <button class="cart-btn">
+        <a href="giohang.html">
+        <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+      </a>
+      </button>
+      
+      <button class="notification-btn">
+        <a href="thongbao.html">
+        <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+      </a>
+      </button>
+      <a href="login.html">
+        <button class="auth-btn">Đăng nhập</button>
+      </a>
+      <a href="register.html">
+        <button class="auth-btn">Đăng ký</button>
+      </a>
+    <div id="user-avatar" class="avatar-container" style="display: none;">
+      <img src="avatar.png" alt="User Avatar" class="avatar-img">
+      <div class="logout-menu">
+        <a href="#" id="logoutBtn">Đăng xuất</a>
+      </div>
+    </div>
+    </div>
+  </header>
+  
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <a href="chitietsanpham1.html">
+      <img src="hinh1.png" alt="Slide 1">
+    </a>
+    </div>
+    <div class="slide fade">
+      <a href="chitietsanpham9.html">
+      <img src="hinh2.png" alt="Slide 2">
+    </a>
+    </div>
+    <div class="slide fade">
+      <a href="chitietsanpham11.html">
+      <img src="hinh3.png" alt="Slide 3">
+    </a>
+    </div>
+    <div class="slide fade">
+      <a href="chitietsanpham18.html">
+      <img src="hinh4.png" alt="Slide 4">
+      </a>
+    </div>
+    <div class="slide fade">
+      <a href="chitietsanpham24.html">
+      <img src="hinh5.png" alt="Slide 5">
+    </a>
+    </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  <section class="lego-models">
+    <h2>Mô hình Lego</h2>
+    <div class="lego-gallery">
+      <div class="lego-item">
+        <a href="chitietsanpham.html">
+        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbld-llz4ypqg8qxmd0.webp" alt="Lego Model 1">
+      </a>
+        <p class="lego-name">Mô hình Lego Doremon</p>
+        <p class="lego-price">500,000 VND</p>
+        <a href="chitietsanpham.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="lego-item">
+        <a href="chitietsanpham1.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08@resize_w450_nl.webp" alt="Lego Model 2">
+      </a>
+        <p class="lego-name">Mô hình Lego Tôn Ngộ Không</p>
+        <p class="lego-price">585.220 VND</p>
+        <a href="chitietsanpham1.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="lego-item">
+        <a href="chitietsanpham2.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2o8hci3swxm74.webp" alt="Lego Model 3">
+      </a>
+        <p class="lego-name">Mô hình lego Triệu Tử Long</p>
+        <p class="lego-price">279.000 VND</p>
+        <a href="chitietsanpham2.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="lego-item">
+        <a href="chitietsanpham3.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2jtitbo7smq97.webp.jpg" alt="Lego Model 4">
+      </a>
+        <p class="lego-name">Mô hình Lego Robot Biết Yêu</p>
+        <p class="lego-price">59.000 VND</p>
+        <a href="chitietsanpham3.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="lego-item">
+        <a href="chitietsanpham4.html">
+        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rdwc-lz5yicrnb8dk5a@resize_w450_nl.webp" alt="Lego Model 5">
+      </a>
+        <p class="lego-name">Mô hình Lego lâu đài</p>
+        <p class="lego-price">178.000 VND</p>
+        <a href="chitietsanpham4.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="transformer-models">
+    <h2>Mô hình Transformer</h2>
+    <div class="transformer-gallery">
+      <div class="transformer-item">
+        <a href="chitietsanpham5.html">
+        <img src="https://down-vn.img.susercontent.com/file/sg-11134301-7rdy6-lz0b7y8f50f621.webp" alt="Transformer Model 1">
+      </a>
+        <p class="transformer-name">Mô hình Optimus Prime, Bumblebee</p>
+        <p class="transformer-price">167.000 VND</p>
+        <a href="chitietsanpham5.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="transformer-item">
+        <a href="chitietsanpham6.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzyjskw3wty97b@resize_w450_nl.webp" alt="Transformer Model 2">
+      </a>
+        <p class="transformer-name">MÔ HÌNH MINI OPTIMUS PRIME MTST-00A</p>
+        <p class="transformer-price">379.000 VND</p>
+        <a href="chitietsanpham6.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="transformer-item">
+        <a href="chitietsanpham7.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsm76qs68ntlb9.webp" alt="Transformer Model 3">
+        </a>
+        <p class="transformer-name">Mô hình Transformer Megatron biến hình xe tăng</p>
+        <p class="transformer-price">363.000 VND</p>
+        <a href="chitietsanpham7.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="transformer-item">
+        <a href="chitietsanpham8.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lswx6s81uwex38@resize_w450_nl.webp" alt="Transformer Model 4">
+      </a>
+        <p class="transformer-name">Mô hình Transformer Baiwei TW1024B Heroes of Fire</p>
+        <p class="transformer-price">323.000 VND</p>
+        <a href="chitietsanpham8.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="transformer-item">
+        <a href="chitietsanpham9.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw8rqwjsja3f9c@resize_w450_nl.webp" alt="Transformer Model 5">
+      </a>
+        <p class="transformer-name">Mô hình Transformer Shockwave TW-1028</p>
+        <p class="transformer-price">435.000 VND</p>
+        <a href="chitietsanpham9.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="dragon-ball-models">
+    <h2>Mô hình Dragon Ball</h2>
+    <div class="dragon-ball-gallery">
+      <div class="dragon-ball-item">
+        <a href="chitietsanpham10.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223rz4nibxa79.webp" alt="Dragon Ball Model 1">
+      </a>
+        <p class="dragon-ball-name">Mô hình Dragon Ball Majin Vegeta</p>
+        <p class="dragon-ball-price">67.000 VND</p>
+        <a href="chitietsanpham10.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="dragon-ball-item">
+        <a href="chitietsanpham11.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2uhpspbfjqy4e@resize_w450_nl.webp" alt="Dragon Ball Model 2">
+      </a>
+        <p class="dragon-ball-name">Mô hình Dragon Ball Rồng Thần Trái Đất</p>
+        <p class="dragon-ball-price">182.000 VND</p>
+        <a href="chitietsanpham11.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="dragon-ball-item">
+        <a href="chitietsanpham12.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lps5n69w5ln6b1@resize_w450_nl.webp" alt="Dragon Ball Model 3">
+      </a>
+        <p class="dragon-ball-name">Mô Hình Dragon Ball Son Goku Sử Dụng Genkidama</p>
+        <p class="dragon-ball-price">550.000 VND</p>
+        <a href="chitietsanpham12.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="dragon-ball-item">
+        <a href="chitietsanpham13.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkwompnmisp72b@resize_w450_nl.webp" alt="Dragon Ball Model 4">
+      </a>
+        <p class="dragon-ball-name">Mô Hình Son Goku Bản Cao Cấp Bản Năng Vô Cực Ultra Instinct</p>
+        <p class="dragon-ball-price">899.000 VND</p>
+        <a href="chitietsanpham13.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+      <div class="dragon-ball-item">
+        <a href="chitietsanpham14.html">
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lom24x0zgrsn5b.webp" alt="Dragon Ball Model 5">
+        </a>
+        <p class="dragon-ball-name">Goku SSJ3 - Dragon Ball - Huben Studio</p>
+        <p class="dragon-ball-price">15.000.000 VND</p>
+        <a href="chitietsanpham14.html">
+        <button class="buy-btn">Xem chi tiết</button>
+      </a>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="index.html" class="page-btn active">1</a>
+      <a href="index1.html" class="page-btn">2</a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-column">
+        <h3>Hỗ trợ khách hàng</h3>
+        <ul>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Chính sách bán sỉ</a></li>
+          <li><a href="#">Tư vấn mua hàng</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Chính sách bán hàng</h3>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách vận chuyển</a></li>
+          <li><a href="#">Chính sách bảo hành</a></li>
+          <li><a href="#">Phương thức thanh toán</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>MOHINHSHOP</h3>
+        <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+        <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+        <p>Email: mohinhshop@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+          <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+          <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+          <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+      <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

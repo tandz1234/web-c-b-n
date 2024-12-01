@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="chitietsanpham.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <section class="lego-models1">
+        <div class="lego-gallery">
+            <div class="lego-item">
+                <div class="product-images">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbld-llz4ypqg8qxmd0.webp" alt="Product Image 1">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblt-llz4ypra64ahd5.webp" alt="Product Image 2">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134201-7rblx-llz4ypvq116ze8.webp" alt="Product Image 3">
+                </div>            
+                <div class="text-container">
+                  <h1 class="product-details">
+                    Mô hình lego Doraemon thần tài, mèo thần tài, <span>Đoremon lân</span>
+                  </h1>
+                  <p class="product-price">Giá: 500,000 VND</p>
+                  <p class="return-policy">Chính sách trả hàng: trong vòng 15 ngày kể từ ngày nhận.</p>
+                  <p class="shipping-policy">Vận chuyển: Miễn phí vận chuyển</p>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="0" min="0" readonly>
+                    <button class="quantity-btn" id="increase">+</button>
+                  </div>
+                  <div class="buy-now-container">
+                    <button class="buy-now-btn">Mua hàng</button>
+                    <button class="add-to-cart-btn" 
+                            data-name="Mô hình lego Doraemon thần tài, mèo thần tài" 
+                            data-price="500,000" 
+                            data-image="https://down-vn.img.susercontent.com/file/sg-11134201-7rbld-llz4ypqg8qxmd0.webp" 
+            onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                  </div>              
+                </div>
+              </div>
+              <div class="product-description">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>Le.go DOREMON Mẫu Cao 40- 67-91-93cm kích thước size đại ( Size 40cm shop tặng 1 búa, size 67-91-93 cm tặng 3 búa trên 1 sản phẩm)</p>
+                <p><strong>Thông Số Sản Phẩm:</strong></p>
+                <ul>
+                  <li>Sản xuất năm: 2023</li>
+                  <li>Thành phần: Nhựa ABS mảnh nhỏ</li>
+                  <li>Thông số kỹ thuật: Chơi Mô Hình Lắp Ráp con tránh xa các trò chơi điện tử, tivi, điện thoại, nội dung không lành mạnh</li>
+                  <li>Ba mẹ bận rộn công việc có thể chơi cùng con, dạy con điều hay</li>
+                  <li>Mô Hình Lắp Ráp giúp con phát triển trí tưởng tượng, sáng tạo</li>
+                  <li>Con trở nên Kiên Nhẫn hơn, chơi lego lắp ghép cần thời gian</li>
+                  <li>Phát triển sự Tập Trung cao độ của con, thói quen làm việc hiệu quả</li>
+                  <li>Rèn luyện sự Khéo Léo, nhanh nhạy, tăng khả năng phối hợp giữa Tay và Mắt</li>
+                  <li>Con học cách làm việc nhóm, chơi cùng ba mẹ, bạn bè</li>
+                  <li>Con biết nhìn nhận vấn đề từ nhiều mặt, tìm cách giải quyết vấn đề</li>
+                  <li>Giúp con Thông Minh hơn, kích thích phát triển não bộ toàn diện</li>
+                  <li>Con biết Yêu Thương hơn, gắn bó với gia đình, bạn bè, thế giới xung quanh</li>
+                </ul>
+                <p>Mô Hình Lắp Ráp được chế tạo hoàn toàn từ chất liệu nhựa nguyên sinh ABS cao cấp, độ bền và chống biến dạng khi va đập tốt. Chất liệu này không chứa BPA, tuyệt đối an toàn với sức khỏe của bé.</p>
+                <p><strong>Hướng dẫn sử dụng:</strong> Đồ chơi Mô Hình Lắp Ráp giúp kích thích khả năng kiểm soát, trí tưởng tượng và sáng tạo của trẻ, kỹ năng giải quyết vấn đề, kỹ năng xã hội và thể thao.</p>
+                <p><strong>Thông tin cảnh báo:</strong> Sản phẩm không dành cho bé dưới 6 tuổi. Sản phẩm có những lợi ích tiềm tàng vượt trội hơn những loại đồ chơi trí tuệ khác để bố mẹ có thể sẵn sàng mua cho con mình để phát triển trí não một cách tối đa, và hạn chế tiếp xúc nhiều với điện thoại.</p>
+              </div>
+      </section>
+      <div class="product-suggestions">
+        <h3>Gợi Ý Sản Phẩm</h3>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08.webp" alt="Sản phẩm 1">
+            <p>Mô hình lege Tôn Ngộ Không</p>
+            <p class="product-price">585.220 VND</p>
+            <a href="chitietsanpham1.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzyjskw3wty97b@resize_w450_nl.webp" alt="Sản phẩm 2">
+            <p>MÔ HÌNH MINI OPTIMUS PRIME MTST-00A</p>
+            <p class="product-price">379.000 VND</p>
+            <a href="chitietsanpham6.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2uhpspbfjqy4e@resize_w450_nl.webp" alt="Sản phẩm 3">
+            <p>Mô hình Dragon Ball Rồng Thần Trái Đất</p>
+            <p class="product-price">182.000 VND</p>
+            <a href="chitietsanpham11.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd3r-lx9cs99j3u5ce1@resize_w450_nl.webp" alt="Sản phẩm 4">
+            <p>Mô Hình Gundam Lắp Ráp WFM 1/144 GUNDAM SCHWARZETTE</p>
+            <p class="product-price">89.249 VND</p>
+            <a href="chitietsanpham16.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/97e0ec92f8ac587cc65aeee66c10dfb9.webp" alt="Sản phẩm 5">
+            <p>Mô hình One Piece Luffy Gear 4 king kong</p>
+            <p class="product-price">129.000 VND</p>
+            <a href="chitietsanpham21.html" class="view-details">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+      
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bán sỉ</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách bán hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>MOHINHSHOP</h3>
+          <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+          <p>Email: mohinhshop@gmail.com</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+            <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+        <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+      </div>
+      </footer>
+      <div id="order-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h2>Thông tin đặt hàng</h2>
+          <form id="order-form">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+  
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+  
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" placeholder="Nhập địa chỉ của bạn" required></textarea>
+  
+            <div class="modal-buttons">
+              <button type="submit" class="submit-btn">Xác nhận</button>
+              <button type="button" class="close-btn">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script-chitietsanpham.js"></script>
+</html>

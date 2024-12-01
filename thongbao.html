@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="thongbao.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <main id="notification-container">
+      <ul id="order-list"></ul> 
+    </main>
+
+  <footer>
+    <p>&copy; 2024 Mô hình store. Tất cả quyền được bảo lưu.</p>
+    <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+  </footer>
+
+  <script src="thongbao.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="chitietsanpham.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <section class="lego-models1">
+        <div class="lego-gallery">
+            <div class="lego-item">
+                <div class="product-images">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223rz4nibxa79.webp" alt="Product Image 1">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223roqcuacef6.webp" alt="Product Image 2">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223roqcsvryc5.webp" alt="Product Image 3">
+                </div>            
+                <div class="text-container">
+                  <h1 class="product-details">
+                    Mô hình Dragon Ball Majin Vegeta
+                  </h1> 
+                  <p class="product-price">Giá: 67.000 VND </p>
+                  <p class="return-policy">Chính sách trả hàng: trong vòng 15 ngày kể từ ngày nhận.</p>
+                  <p class="shipping-policy">Vận chuyển: Miễn phí vận chuyển</p>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="0" min="0" readonly>
+                    <button class="quantity-btn" id="increase">+</button>
+                  </div>
+                  <div class="buy-now-container">
+                    <button class="buy-now-btn">Mua hàng</button>
+                    <button class="add-to-cart-btn" 
+                            data-name="Mô hình Dragon Ball Majin Vegeta" 
+                            data-price="67.000" 
+                            data-image="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m223rz4nibxa79.webp" 
+            onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                  </div>              
+                </div>
+              </div>
+              <div class="product-description">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>Đây là một cuộc phiêu lưu đầy dũng cảm và niềm vui!</p>
+                <p>Ý tưởng quà tặng lễ hội tốt nhất cho gia đình và bạn bè, hoặc để tự mình cảm thấy bất ngờ.</p>
+                <p>• Tất cả các sản phẩm đều mới.</p>
+                <p>• Thưởng thức sự hồi hộp khi mở món quà bất ngờ.</p>
+                <p>Ví dụ: Son Goku, Vegeta, Krillin, Android 18, Kame Sennin, Piccolo, Frieza, Cell, v.v.</p>
+                <p>Mỗi hộp đều có một mô hình nhân vật, không thể chọn kiểu dáng và kích thước mô hình.</p>
+                <p>Nhưng tôi hy vọng bạn sẽ thắng và nhận được mô hình nhân vật mà bạn yêu thích.</p>
+                <p>Hãy luôn nhớ rằng sự hài lòng là điều cá nhân.</p>
+                <p>Bạn có thể hài lòng với những gì bạn nhận được.</p>
+                <p>Điều này phụ thuộc vào quan điểm của bạn, chỉ nhận rủi ro mà bạn có thể chịu đựng.</p>
+                <p>Cảm ơn bạn rất nhiều, chúc bạn may mắn!</p>
+                <p>- Do Điều Kiện Độ Sáng Khác Nhau Màu Sắc Có Thể Chênh Lệch 3-5%</p>
+                <p>LƯU Ý:</p>
+                <p>- Màu thực tế có thể hơi khác so với hình ảnh do độ phân giải màn hình máy tính, độ sáng và độ tương phản.</p>
+                <p>- Vui lòng cho phép sai số 1-3 CM do đo lường thủ công.</p>
+                <p>- Vui lòng để lại tin nhắn trước khi bạn đưa ra phản hồi xấu hoặc nếu không hài lòng với sản phẩm.</p>
+                <p>🔰CAM KẾT:</p>
+                <p>✔️ Cam kết 100% sản phẩm shop đăng bán giống trong mô tả và hình đăng.</p>
+                <p>✔️ Về dịch vụ: Shop sẽ cố gắng trả lời hết những thắc mắc xoay quanh sản phẩm nhé. </p>
+                <p>✔️ Thời gian chuẩn bị hàng: Hàng có sẵn, thời gian chuẩn bị tối ưu nhất. </p>
+             
+      </section>
+      <div class="product-suggestions">
+        <h3>Gợi Ý Sản Phẩm</h3>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08.webp" alt="Sản phẩm 1">
+            <p>Mô hình lege Tôn Ngộ Không</p>
+            <p class="product-price">585.220 VND</p>
+            <a href="chitietsanpham1.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzyjskw3wty97b@resize_w450_nl.webp" alt="Sản phẩm 2">
+            <p>MÔ HÌNH MINI OPTIMUS PRIME MTST-00A</p>
+            <p class="product-price">379.000 VND</p>
+            <a href="chitietsanpham6.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2uhpspbfjqy4e@resize_w450_nl.webp" alt="Sản phẩm 3">
+            <p>Mô hình Dragon Ball Rồng Thần Trái Đất</p>
+            <p class="product-price">182.000 VND</p>
+            <a href="chitietsanpham11.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd3r-lx9cs99j3u5ce1@resize_w450_nl.webp" alt="Sản phẩm 4">
+            <p>Mô Hình Gundam Lắp Ráp WFM 1/144 GUNDAM SCHWARZETTE</p>
+            <p class="product-price">89.249 VND</p>
+            <a href="chitietsanpham16.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/97e0ec92f8ac587cc65aeee66c10dfb9.webp" alt="Sản phẩm 5">
+            <p>Mô hình One Piece Luffy Gear 4 king kong</p>
+            <p class="product-price">129.000 VND</p>
+            <a href="chitietsanpham21.html" class="view-details">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bán sỉ</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách bán hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>MOHINHSHOP</h3>
+          <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+          <p>Email: mohinhshop@gmail.com</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+            <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+        <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+      </div>
+      </footer>
+      <div id="order-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h2>Thông tin đặt hàng</h2>
+          <form id="order-form">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+  
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+  
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" placeholder="Nhập địa chỉ của bạn" required></textarea>
+  
+            <div class="modal-buttons">
+              <button type="submit" class="submit-btn">Xác nhận</button>
+              <button type="button" class="close-btn">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script-chitietsanpham.js"></script>
+</html>

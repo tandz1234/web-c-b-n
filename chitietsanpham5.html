@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Mô Hình</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="chitietsanpham.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="logo.png" alt="ToyShop Logo" class="logo">
+    </a>
+      </div>
+      <div class="search-container">
+        <form id="searchForm" onsubmit="return handleSearch(event)">
+          <input type="text" id="searchInput" class="search-box" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+      </div>
+      <div class="auth-container">
+        <button class="cart-btn">
+          <a href="giohang.html">
+          <img src="giohang.png" alt="Giỏ hàng" class="cart-icon">
+        </a>
+        </button>
+        
+        <button class="notification-btn">
+          <a href="thongbao.html">
+          <img src="thongbao.png" alt="Thông báo" class="notification-icon">
+          </a>
+          </button>
+        <a href="login.html">
+          <button class="auth-btn">Đăng nhập</button>
+        </a>
+        <a href="register.html">
+          <button class="auth-btn">Đăng ký</button>
+        </a>
+      <div id="user-avatar" class="avatar-container" style="display: none;">
+        <img src="avatar.png" alt="User Avatar" class="avatar-img">
+        <div class="logout-menu">
+          <a href="#" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <section class="lego-models1">
+        <div class="lego-gallery">
+            <div class="lego-item">
+                <div class="product-images">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134301-7rdy6-lz0b7y8f50f621@resize_w450_nl.webp" alt="Product Image 1">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134301-7rdxk-lz0b884yc10oda@resize_w450_nl.webp" alt="Product Image 2">
+                    <img class="slide" src="https://down-vn.img.susercontent.com/file/sg-11134301-7rdw3-lz0b87viptt815.webp" alt="Product Image 3">
+                </div>            
+                <div class="text-container">
+                  <h1 class="product-details">
+                    Mô hình Transformers(Robot biến hình)Optimus Prime, Bumblebee
+                  </h1>
+                  <p class="product-price">Giá: 167.000 VND</p>
+                  <p class="return-policy">Chính sách trả hàng: trong vòng 15 ngày kể từ ngày nhận.</p>
+                  <p class="shipping-policy">Vận chuyển: Miễn phí vận chuyển</p>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="0" min="0" readonly>
+                    <button class="quantity-btn" id="increase">+</button>
+                  </div>
+                  <div class="buy-now-container">
+                    <button class="buy-now-btn">Mua hàng</button>
+                    <button class="add-to-cart-btn" 
+                            data-name="Mô hình Transformers(Robot biến hình)Optimus Prime, Bumblebee" 
+                            data-price="167.000" 
+                            data-image="https://down-vn.img.susercontent.com/file/sg-11134301-7rdy6-lz0b7y8f50f621@resize_w450_nl.webp" 
+            onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                  </div>              
+                </div>
+              </div>
+              <div class="product-description">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>Mô hình đồ chơi biến dạng Xe King Kong Robot Bumblebee Khủng long Dây thừng Xử lý Hợp kim Chính hãng</p>
+                <p>Các tính năng:</p>
+                <p>Các tính năng nổi bật:</p>
+                <p>1. Đồ chơi biến hình, thực hiện ước mơ Robot của mọi đứa trẻ</p>
+                <p>2. Di động đa khớp trong toàn bộ cơ thể, có khả năng hoàn thành nhiều chuyển động</p>
+                <p>3. Chất liệu Abs chất lượng cao và một số hợp kim, chắc chắn và bền</p>
+                <p>4. Đáp ứng các ý tưởng hoang dã của trẻ em, quà tặng phim</p>
+                <p>5. Linh hoạt và linh hoạt, hướng dẫn trí tưởng tượng không gian của trẻ em</p>
+                <p>Thông số kỹ thuật:</p>
+                <p>Chất liệu: Abs + Hợp kim</p>
+                <p>Kích thước:</p>
+                <p>Tình trạng xe: 17,5x7,5x5cm</p>
+                <p>Trạng thái Autobot: 20x18x9cm</p>
+                <p>Màu: Vàng, Xanh đỏ</p>
+                <p>Nội dung bao bì:</p>
+                <p>1 x Xe biến dạng (Phiên bản hợp kim tùy chọn)</p>
+                <p>Lưu ý:</p>
+                <p>Do đo lường thủ công, xin vui lòng cho phép một độ lệch đo lường 1-3 cm.</p>
+                <p>Do sự thật rằng mỗi màn hình máy tính có khả năng hiển thị màu sắc khác nhau và mọi người đều có ý kiến khác nhau về những màu này, màu sắc thực tế có thể thay đổi một chút.</p>
+              </div>
+             
+      </section>
+      <div class="product-suggestions">
+        <h3>Gợi Ý Sản Phẩm</h3>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lla3o60tithk08.webp" alt="Sản phẩm 1">
+            <p>Mô hình lege Tôn Ngộ Không</p>
+            <p class="product-price">585.220 VND</p>
+            <a href="chitietsanpham1.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzyjskw3wty97b@resize_w450_nl.webp" alt="Sản phẩm 2">
+            <p>MÔ HÌNH MINI OPTIMUS PRIME MTST-00A</p>
+            <p class="product-price">379.000 VND</p>
+            <a href="chitietsanpham6.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2uhpspbfjqy4e@resize_w450_nl.webp" alt="Sản phẩm 3">
+            <p>Mô hình Dragon Ball Rồng Thần Trái Đất</p>
+            <p class="product-price">182.000 VND</p>
+            <a href="chitietsanpham11.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd3r-lx9cs99j3u5ce1@resize_w450_nl.webp" alt="Sản phẩm 4">
+            <p>Mô Hình Gundam Lắp Ráp WFM 1/144 GUNDAM SCHWARZETTE</p>
+            <p class="product-price">89.249 VND</p>
+            <a href="chitietsanpham16.html" class="view-details">Xem chi tiết</a>
+          </div>
+          <div class="product-item">
+            <img src="https://down-vn.img.susercontent.com/file/97e0ec92f8ac587cc65aeee66c10dfb9.webp" alt="Sản phẩm 5">
+            <p>Mô hình One Piece Luffy Gear 4 king kong</p>
+            <p class="product-price">129.000 VND</p>
+            <a href="chitietsanpham21.html" class="view-details">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bán sỉ</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách bán hàng</h3>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>MOHINHSHOP</h3>
+          <p>Địa chỉ: Số 04 ngõ 365 phố Vọng, quận Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 096.306.7159 – 036.343.5990</p>
+          <p>Email: mohinhshop@gmail.com</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/034/716/139/large_2x/x-new-twitter-logo-free-png.png" alt="Twitter"></a>
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/014/440/919/original/email-icon-design-in-blue-circle-png.png" alt="Email"></a>
+            <a href="#"><img src="https://clipart.info/images/ccovers/1499955335whatsapp-icon-logo-png.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 MoHinhShop. Tất cả quyền được bảo lưu.</p>
+        <p><a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a></p>
+      </div>
+      </footer>
+      <div id="order-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <h2>Thông tin đặt hàng</h2>
+          <form id="order-form">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+  
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+  
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" placeholder="Nhập địa chỉ của bạn" required></textarea>
+  
+            <div class="modal-buttons">
+              <button type="submit" class="submit-btn">Xác nhận</button>
+              <button type="button" class="close-btn">Hủy</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script-chitietsanpham.js"></script>
+</html>
